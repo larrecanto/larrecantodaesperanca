@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+    <title>Comunidade Terapêutica Lar Recanto da Esperança</title>
+  </head>
+  <body>
+    <header>
+      <!-- logo -->
+      <a href="index.html"
+        ><img
+          src="/imgs/logo-simbolo.jpeg"
+          alt="Logo da Comunidade Terapêutica Lar Recanto da Esperança"
+          id="logo"
+      /></a>
+      <div id="titulo-e-subtitulo">
+        <h1 id="titulo">Lar Recanto da Esperança</h1>
+        <h3 id="subtitulo">Comunidade Terapêutica</h3>
+      </div>
+      <!-- navegação -->
+      <nav>
+        <ul id="nav-principal">
+          <li><a href="#sobre" class="nav-principal-link">Sobre o Lar</a></li>
+          <li><a href="#tratamento" class="nav-principal-link">Tratamento</a></li>
+          <li><a href="#titulo-galeria-texto" class="nav-principal-link">Galeria</a></li>
+          <li><a href="#novidades" class="nav-principal-link">Novidades</a></li>
+          <li><a href="#doacoes" class="nav-principal-link">Doações</a></li>
+          <li><a href="#contato" class="nav-principal-link">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- hero (imagem ampliada/banner) -->
+    <section id="hero">
+      <h1 id="hero-text">
+        Se você quer parar de usar, o problema é nosso.<br>
+        Se você quer continuar a usar, o problema é seu.
+      </h1>
+    </section>
+
+    <!-- conteúdo principal -->
+    <main>
+      <!-- sobre -->
+      <section id="sobre">
+        <h2 class="subtitulos" id="sobre-o-lar-title">Sobre o Lar</h2>
+        <!-- criação de containers com flexbox para que seu conteúdo possa ser alinhado -->
+        <div id="flex-container-1">
+          <div id="sobre-o-lar-texto-container">
+            <p>
+              O Lar Recanto da Esperança oferece acolhimento diário a usuários de álcool e drogas,
+              permitindo um planejamento terapêutico dentro de uma perspectiva individualizada,
+              fundamentada no pressuposto de que o tratamento terapêutico preconizado por lei além
+              do tratamento medicamentoso ou associado a ele, precisa estar pautado em condições que
+              respeitem o indivíduo enquanto pessoa, possibilitando e planejando a sua reinclusão
+              social, profissional e familiar.
+            </p>
+            <p>
+              Ainda encontra dificuldades em ultrapassar estigmas oriundos da falta de conhecimento
+              da metodologia aplicada aqui, fruto de um trabalho definido, implantado e aplicado com
+              diretrizes específicas que são determinantes no processo de recuperação do usuário
+              desta instituição. Adotamos o modelo que busca o desenvolvimento integral do homem
+              baseado no tripé Oração, Disciplina e Trabalho, onde o sujeito é responsável pela sua
+              recuperação.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- tratamento -->
+      <section id="tratamento">
+        <div id="flex-container-2">
+          <h2 class="subtitulos" id="tratamento-title">Tratamento</h2>
+          <div id="tratamento-intro">
+            <p>
+              Nas nossas atividades terapêuticas, utilizamos os 12 passos do NA e toda a literatura
+              relacionada a eles.
+            </p>
+            <p id="conheça-os-passos">Conheça quais são esses passos;</p>
+          </div>
+          <!-- 
+              utilização do sistema de grid do bootstrap (que utiliza flex por baixo dos panos) 
+              para implementação do quadro de 12 passos
+            -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm item-tratamento">
+                <p class="icone-numero1">1. </p>
+                <p class="texto-passos">
+                  Admitimos que éramos impotentes perante a nossa adicção, 
+                  que nossas vidas tinham se tornado incontroláveis.
+                </p>
+              </div>
+              <div class="col-sm item-tratamento">
+                <p class="icone-numero1">2. </p>
+                <p class="texto-passos">
+                  Viemos a acreditar que um Poder maior do que nós poderia devolver-nos à sanidade.
+                </p>
+              </div>
+              <div class="col-sm item-tratamento">
+                <p class="icone-numero1">3. </span>
+                <p class="texto-passos">
+                  Decidimos entregar nossa vontade e nossas vidas aos cuidados de Deus, da maneira como nós O compreendíamos.
+                </p>
+              </div>
+              <div class="col-sm item-tratamento">
+                <p class="icone-numero1">4. </p>
+                <p class="texto-passos">
+                  Fizemos um profundo e destemido inventário moral de nós mesmos.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm item-tratamento">
+                <span class="icone-numero2">5. </span>
+                <p class="texto-passos">
+                  Admitimos a Deus, a nós mesmos e a outro ser humano a natureza exata das nossas falhas.
+                </p>
+              </div>
+              <div class="col-sm item-tratamento">
+                <span class="icone-numero2">6. </span>
+                <p class="texto-passos">
+                  Prontificamo-nos inteiramente a deixar que Deus removesse todos esses defeitos de caráter.
+                </p>
+              </div>
+              <div class="col-sm item-tratamento">
+                <span class="icone-numero2">7. </span>
+                <p class="texto-passos">
+                  Humildemente pedimos a Ele que removesse nossos defeitos.
+                </p>
+              </div>
+              <div class="col-sm item-tratamento">
+                <span class="icone-numero2">8. </span>
+                <p class="texto-passos">
+                  Fizemos uma lista de todas as pessoas que tínhamos prejudicado e nos dispusemos a fazer reparações a todas elas.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm item-tratamento">
+                <span class="icone-numero3">9. </span>
+                <p class="texto-passos">
+                  Fizemos reparações diretas a tais pessoas, sempre que possível, exceto quando fazê-lo pudesse prejudicá-las ou a outras.
+                </p>
+              </div>
+              <div class="col-sm item-tratamento">
+                <span class="icone-numero3">10. </span>
+                <p class="texto-passos">
+                  Continuamos fazendo o inventário pessoal e, quando estávamos errados, nós o admitíamos prontamente.
+                </p>
+              </div>
+              <div class="col-sm item-tratamento">
+                <span class="icone-numero3">11. </span>
+                <p class="texto-passos">
+                  Procuramos, através de prece e meditação, melhorar o nosso contato consciente com Deus.
+                </p>
+              </div>
+              <div class="col-sm item-tratamento">
+                <span class="icone-numero3">12. </span>
+                <p class="texto-passos">
+                  Tendo experimentado um despertar espiritual, como resultado destes passos, procuramos levar esta mensagem a outros adictos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="vertical-container">
+          <h1 id="vertical-text">12 passos</h1>
+      </section>
+
+      
+      <!-- galeria -->
+      <div id="galeria-titulo-container">
+        <img src="imgs/image-cover.jpeg" id="imagem-titulo-galeria">
+        <h1 id="titulo-galeria-texto">Galeria
+          <span><img src="imgs/icon-camera.png" id="icon-camera"></span>
+        </h1>
+      </div>
+
+      <section class="gallery min-vh-100">
+        <div class="container-lg">
+          <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col">
+              <img src="imgs/image15.jpeg" class="gallery-item gallery-img" alt="gallery" />
+            </div>
+            <div class="col">
+              <img src="imgs/image20.jpeg" class="gallery-item gallery-img" alt="gallery" />
+            </div>
+            <div class="col">
+              <img src="imgs/image21.jpeg" class="gallery-item gallery-img" alt="gallery" />
+            </div>
+            <div class="col">
+              <img src="imgs/image22.jpeg" class="gallery-item gallery-img" alt="gallery" />
+            </div>
+            <div class="col">
+              <img src="imgs/image2.jpeg" class="gallery-item gallery-img" alt="gallery" />
+            </div>
+            <div class="col">
+              <img src="imgs/image3.jpeg" class="gallery-item gallery-img" alt="gallery" />
+            </div>
+          </div>
+          <!--mostrar mais da galeria-->
+          <span id="dots"> </span>
+          <span id="mais">
+            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3 linha-mostrar-mais">
+              <div class="col">
+                <img src="imgs/image9.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image4.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image5.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image6.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image17.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image18.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image19.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image11.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image12.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image13.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image14.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image16.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image7.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image8.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image10.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image23.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image24.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+              <div class="col">
+                <img src="imgs/image25.jpeg" class="gallery-item gallery-img" alt="gallery" />
+              </div>
+            </div>
+          </span>
+          <div id="ver-botao-container">
+            <button onclick="verMais()" id="ver-botao"><img src="imgs/angle-down.png"></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="gallery-modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/1.jpg" class="modal-img" alt="modal img" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- novidades -->
+      <section id="novidades">
+        <h2 id="titulo-novidades-container"><span id="titulo-novidades">Novidades</span></h2>
+        <div id="novidades-secao1">
+          <img id="img-novidades1" src="imgs/image7.jpeg">
+          <div id="texto-novidades1">
+            <span class="h2" id="fazenda-de-aquaponia">Fazenda de Aquaponia</span>
+            <p>
+              A maior fazenda de aquaponia comercial de Florianópolis.
+              Essa unidade produtiva é uma parceria entre o Lar Recanto da Esperança e o CEPIA
+              (Centro de Produção Integrada e Aquaponia)
+            </p>
+          </div>
+        </div>
+        <div id="novidades-secao2">
+          <p id="texto-novidades2">
+            Com a missão de criar a primeira escola de aquaponia de Santa Catarina, servindo como unidade modelo de difusão desta tecnologia.
+          </p>
+          <img id="img-novidades2" src="imgs/image13.jpeg">
+        </div>
+      </section>
+
+      <!-- doações -->
+      <section id="doacoes">
+          <!-- <img src="imgs/pessoas.jpeg" id="imagem-doacoes"> -->
+          <div id="texto-doacoes">
+            <h2 id="doacoes-titulo">Doações</h2>
+            <p>
+              Seja um doador e nos ajude a continuar ajudando outras pessoas. <br>
+              Doe pela conta bancária ou pelo PIX através do QR Code
+            </p>
+            <div id="conta-e-qrcode">
+              <p id="dados-bancarios">
+                 <br>
+                Caixa Econômica Federal<br>
+                PJ 003 <br>
+                Ag: 0408 <br>
+                C/C: 9614-0 <br>
+                Lar Recanto da Esperança <br>
+              </p>
+              <div id="dados-bancarios">
+                <p>
+                  <img src="imgs/pix.png" id="pix"> 
+                  <span id="pix-text">PIX</span> 
+                </p>
+                <p>
+                  36.968.498/0001-28 (CPNJ) <br>
+                  Comunidade Terapêutica Gênesis
+                </p>
+              </div>
+            </div>
+          </div>
+          
+      </section>
+
+      <!-- contato e endereço da comunidade -->
+      <section id="contato-container">
+        <h2 id="contato-titulo">Contato</h2>
+        <div id="contato">
+          <div id="sociais">
+            <p><b>Telefone:</b> (48) 3269-0165</p>
+            <p><img src="imgs/whatsapp.png"> (48) 99151-5477</p>
+            <p>larrecantoct@gmail.com</p>
+            <p><b>Redes Sociais</b></p>
+            <p>
+              <a href="https://www.facebook.com/larecantodaesperanca/">
+                <img src="imgs/facebook.png">
+              </a>
+              <a href="https://www.instagram.com/larrecantodaesperanca/">
+                <img src="imgs/instagram.png">
+              </a>
+            </p>
+          </div>
+          <div id="endereco">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14160.406213747725!2d-48.4069537!3d-27.4660976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x19b895ee1bd19e55!2sComunidade%20Terap%C3%AAutica%20Lar%20Recanto%20da%20Esperan%C3%A7a!5e0!3m2!1sen!2sbr!4v1625414897399!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        
+            <p id="endereco-texto">
+              <span id="endereco-titulo">Endereço</span> <br>
+              Rodovia João Gualberto Soares, 3040 <br>
+              88058300 <br>
+              Florianópolis, SC <br>
+            </p>
+          </div>
+        </div>
+        </section>
+        <footer>
+        </footer>
+    </main>
+    <!-- rodapé -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

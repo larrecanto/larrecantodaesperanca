@@ -1,0 +1,577 @@
+/* variáveis para facilitar a reutilização de cores */
+:root {
+  --green-pea: #054C32;
+  --atlantis: #036440;
+  --bege: #F4F0ED
+}
+
+* { margin:0; padding:0; box-sizing: border-box;}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, .h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+#titulo-e-subtitulo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-right: 6rem;
+}
+
+#titulo {
+  font-family: "Bigshot One", cursive;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 2rem;
+  color: var(--atlantis)
+}
+
+#subtitulo {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+
+header {
+  max-height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  place-content: center;
+  margin-bottom: 1rem;
+}
+
+#logo {
+  max-width: 150px;
+  /* margin-right: 3rem; */
+  margin-right: 3rem;
+  margin-left: 2rem;
+  padding-top: 0.5rem;
+}
+
+#nav-principal {
+  font-weight: 400;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-content: space-between;
+  list-style: none;
+  align-items: center;
+  justify-items: center;
+  margin-top: 3rem;
+}
+
+/* estilização dos links no menu de navegação usando uma transição para underline qdo o mouse passa */
+#nav-principal a {
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+  padding: 0 2rem 0 2rem;
+  text-decoration: underline 0.15rem rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+  /* espaçamento entre o underline e o texto */
+  text-underline-offset: 0.5em;
+}
+
+#nav-principal a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 1);
+}
+
+#hero {
+  width: 100%;
+  height: 70vh;
+  background-image: url("/imgs/hero1.jpeg");
+  overflow: hidden;
+  position: relative;
+}
+
+/* utilização da propriedade ::before para aplicar filtro verde na imagem de capa. fonte: https://css-tricks.com/apply-a-filter-to-a-background-image/ */
+#hero::before {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  content: '';
+  background-color: rgba(45, 103, 60, 0.603);
+}
+
+#hero-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#sobre-o-lar-title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--green-pea)
+}
+
+#flex-container-1 {
+  display: flex;
+  width: 100vw;
+  justify-content: center
+}
+
+#sobre-o-lar-texto-container {
+  display: flex;
+  /* justify-content: space-between; */
+  text-align: justify;
+  width: 80vw;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  /* margin: 1rem 6rem 0 6rem */
+}
+
+#sobre-o-lar-texto-container p {
+  margin: 1rem;
+}
+
+/* tratamento */
+
+#tratamento {
+  background-color: var(--bege);
+  display: flex;
+  justify-content: center;
+  /* margin: 0; */
+  margin-top: 3rem;
+  align-self: flex-end;
+  justify-self: flex-end;
+  align-content: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 0;
+}
+
+#flex-container-2 {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  justify-content: center
+}
+
+#tratamento-title {
+  margin-top: 1.6rem;
+  font-size: 3rem;
+}
+
+#tratamento-intro {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+#conheça-os-passos {
+  color: var(--green-pea);
+  font-weight: bold;
+}
+
+.item-tratamento {
+  height: 12rem;
+  min-width: 16rem;
+  background-color: white;
+  margin: 2rem;
+  display: flex;
+}
+
+.icone-numero1 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(90deg, hsla(240, 41%, 30%, 1) 96%, hsla(331, 19%, 53%, 1) 100%, hsla(271, 22%, 39%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(240, 41%, 30%, 1) 96%, hsla(331, 19%, 53%, 1) 100%, hsla(271, 22%, 39%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(240, 41%, 30%, 1) 96%, hsla(331, 19%, 53%, 1) 100%, hsla(271, 22%, 39%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.icone-numero2 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(90deg, hsla(240, 41%, 30%, 1) 0%, hsla(271, 22%, 39%, 1) 96%, hsla(331, 19%, 53%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(240, 41%, 30%, 1) 0%, hsla(271, 22%, 39%, 1) 96%, hsla(331, 19%, 53%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(240, 41%, 30%, 1) 0%, hsla(271, 22%, 39%, 1) 96%, hsla(331, 19%, 53%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icone-numero3 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(90deg, hsla(240, 41%, 30%, 1) 0%, hsla(271, 22%, 39%, 1) 2%, hsla(331, 19%, 53%, 1) 20%);
+  background: -moz-linear-gradient(90deg, hsla(240, 41%, 30%, 1) 0%, hsla(271, 22%, 39%, 1) 2%, hsla(331, 19%, 53%, 1) 20%);
+  background: -webkit-linear-gradient(90deg, hsla(240, 41%, 30%, 1) 0%, hsla(271, 22%, 39%, 1) 2%, hsla(331, 19%, 53%, 1) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.texto-passos {
+  text-align: center;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  line-height: 130%;
+}
+
+#vertical-container {
+  display: flex;
+  padding: 0;
+  max-width: 400px;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: -2rem
+}
+
+#vertical-text {
+  color: white;
+  background-color: var(--green-pea);
+  writing-mode: vertical-rl;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* galeria de fotos */
+
+#galeria-titulo-container {
+  position: relative;
+}
+
+#imagem-titulo-galeria {
+  object-fit: cover;
+  width: 100vw;
+  height: 16rem;
+  object-position: 100% 40%;
+  filter: brightness(50%);
+}
+
+#titulo-galeria-texto {
+  color: white;
+  position: absolute;
+  bottom: 25%;
+  right: 40%;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+#icon-camera {
+  max-height: 6rem;
+  margin-bottom: 1rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+.gallery {
+	background-color: #ffffff;
+	padding: 80px 0;
+}
+
+.gallery-img {
+	background-color: #ffffff;
+	padding: 15px;
+	width: 100%;
+	/* box-shadow: 0 0 15px rgba(0,0,0,0.3); */
+	cursor: pointer;
+  width: 650px; 
+  height: 350px; 
+  object-fit: cover;
+}
+
+.gallery-img:hover {
+  opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}  
+
+
+#gallery-modal .modal-img {
+	width: 100%;
+}
+
+#mais {
+  display: none;
+  transition: 1s ease-in-out;
+}
+
+.linha-mostrar-mais {
+  padding-top: 2rem;
+}
+
+#ver-botao-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#ver-botao {
+  padding: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  box-shadow: none;
+  border:none;
+}
+
+/* novidades */
+
+#novidades {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+#titulo-novidades-container {
+  width: 100%;
+}
+
+#titulo-novidades {
+  background-color: var(--green-pea);
+  color:white;
+  max-width: 230px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-left: 5%;
+  padding: 1rem;
+  /* margin-bottom: 6rem; */
+}
+
+#novidades-secao1 {
+  display: flex;
+  margin-left: 16rem;
+  margin-right: 16rem;
+  margin-top: 6rem;
+}
+
+#novidades-secao2 {
+  display: flex;
+  /* margin-right: 8%; */
+  margin-right: 26rem;
+  margin-left: 16rem;
+  margin-top: -2rem;
+}
+
+#img-novidades1 {
+  max-height: 600px;
+  min-width: 600px;
+  object-fit: cover;
+
+}
+
+#img-novidades2 {
+  max-height: 600px;
+  min-width: 600px;
+  object-fit: cover;
+
+}
+
+#texto-novidades1 {
+  text-align: justify;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+#texto-novidades2 {
+  text-align: justify;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-top: 15%;
+  margin-right: 6rem;
+}
+
+#texto-novidades1 p {
+  margin-top: 4rem;
+}
+
+#texto-novidades2 p {
+  margin-top: 4rem;
+}
+
+#fazenda-de-aquaponia {
+  color: var(--atlantis);
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+/* doacoes */
+
+#doacoes {
+  background-image: url("/imgs/pessoas.jpeg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+#doacoes::before {
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  content: '';
+  background-color: rgba(45, 103, 60, 0.815);
+}
+
+#texto-doacoes {
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  right: 5%;
+  color: white;
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 100%;
+}
+
+#doacoes-titulo {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+#conta-e-qrcode {
+  margin-left: 20%;
+  margin-top: 4rem;
+  display: flex;
+  font-size: 1rem;
+  text-align: left;
+  justify-content: space-between;
+  margin-right: 20%;
+}
+
+#dados-bancarios {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+#pix {
+  max-height: 4rem;
+  padding-right: 0.5rem;
+}
+
+#pix-text {
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  line-height: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+#caption {
+  max-width: 270px;
+  display: flex;
+  margin-top: 1rem;
+  font-weight: 300;
+}
+
+/* contato */
+
+#contato-container {
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+
+}
+
+#contato {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+
+#contato a {
+  text-decoration: none;
+}
+
+#contato-titulo {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-left: 5%
+}
+
+#sociais {
+  margin-top: 4rem;
+}
+
+#endereco {
+  display: flex;
+}
+
+#endereco-texto {
+  margin-top: 3rem;
+  margin-left: 2rem
+}
+
+#endereco-titulo {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+footer { 
+  height: 6rem;
+  background-color: var(--bege);
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%; 
+  overflow-x: hidden;
+}
